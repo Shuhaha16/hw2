@@ -68,10 +68,42 @@
 
 # Delete existing data, so you'll start fresh each time this script is run.
 # Use `Model.destroy_all` code.
-# TODO!
+# TODO! 
+
+#{Shoe} each model should have a destroy.all code. write once have models named
+
+Movie.destroy_all
+People.destroy_all
+Roles.destroy_all
 
 # Generate models and tables, according to the domain model
 # TODO!
+
+
+#{SHOE} Build tables with same column names as HW1
+# CREATE TABLE movies (
+#   id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   title TEXT,
+#   year_released INTEGER,
+#   rated TEXT,
+#   person_id INTEGER
+# );
+
+# CREATE TABLE people (
+#   id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   name TEXT
+# );
+
+# CREATE TABLE roles (
+#   id INTEGER PRIMARY KEY AUTOINCREMENT,
+#   movie_id INTEGER,
+#   person_id INTEGER,
+#   character_name TEXT
+# );
+
+batmanbegins = Movie.new({title: "Batman Begins", year_released: 2005, rated: "PG-13", person_id: "Christopher Nolan" })
+batmanbegins.save
+puts "There are #{Movie.all.count} Movies"
 
 # Insert data into your database that reflects the sample data shown above
 # Do not use hard-coded foreign key IDs.
