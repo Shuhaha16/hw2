@@ -72,7 +72,7 @@
 
 #{Shoe} each model should have a destroy.all code. write once have models named
 
-Movie.destroy_all
+Movies.destroy_all
 People.destroy_all
 Roles.destroy_all
 
@@ -101,11 +101,12 @@ Roles.destroy_all
 #   character_name TEXT
 # );
 
-batmanbegins = Movie.new({title: "Batman Begins", year_released: 2005, rated: "PG-13", person_id: "Christopher Nolan" })
-batmanbegins.save
+values = { title: "Batman Begins", year_released: 2005, rated: "PG-13", person_id: "Christopher Nolan" }
+batman1 = Movie.new(values)
+batman1.save
 
 puts "There are #{Movie.all.count} Movies"
-p movie.all
+puts movie.all
 
 # Insert data into your database that reflects the sample data shown above
 # Do not use hard-coded foreign key IDs.
