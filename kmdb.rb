@@ -103,7 +103,9 @@ Roles.destroy_all
 
 batmanbegins = Movie.new({title: "Batman Begins", year_released: 2005, rated: "PG-13", person_id: "Christopher Nolan" })
 batmanbegins.save
+
 puts "There are #{Movie.all.count} Movies"
+p movie.all
 
 # Insert data into your database that reflects the sample data shown above
 # Do not use hard-coded foreign key IDs.
