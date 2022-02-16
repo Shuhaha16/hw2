@@ -72,9 +72,9 @@
 
 #{Shoe} each model should have a destroy.all code. write once have models named
 
-Movies.destroy_all
-People.destroy_all
-Roles.destroy_all
+Movie.destroy_all
+Person.destroy_all
+Role.destroy_all
 
 # Generate models and tables, according to the domain model
 # TODO!
